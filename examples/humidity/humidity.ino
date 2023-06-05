@@ -8,7 +8,7 @@ DHT dht(DHTPIN, DHTTYPE);
 void setup()
 {
     Serial.begin(9600); // シリアル通信の初期化
-    Serail.println("DHT11 test!"); // シリアル通信に文字列を送信
+    Serial.println("DHT11 test!"); // シリアル通信に文字列を送信
 
     dht.begin(); // DHTセンサーの初期化
 }
@@ -20,6 +20,7 @@ void loop()
     float h = dht.readHumidity(); // 湿度の取得
     float t = dht.readTemperature(); // 温度の取得
 
+    Serial.print(isnan(h), isnan(t));
     if (isnan(h) || isnan(t)) // 取得に失敗した場合
     {
         Serial.println("Failed to read from DHT sensor!");
@@ -31,4 +32,5 @@ void loop()
     Serial.print(F("%  Temperature: "));
     Serial.print(t);
     Serial.println(F(" °C"));
+    Serial.flush();
 }
