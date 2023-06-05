@@ -11,7 +11,8 @@
 動作電圧: 3.3V ~ 5.0V
 
 配線：
-![DHT11配線図](https://cdn.shopify.com/s/files/1/0445/1942/4158/files/2021-12-08_16.35.02_480x480.png?v=1638948921)
+![DHT11配線図](https://github.com/Watson-Sei/arduino-uno-radar/assets/55475145/6db85104-801a-41a0-b1d5-3fd5ee401e7e)
+
 
 [湿度センサーコード](https://github.com/Watson-Sei/arduino-uno-radar/blob/main/examples/humidity.ino)
 
