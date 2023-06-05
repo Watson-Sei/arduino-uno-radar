@@ -1,8 +1,7 @@
-int Trigger = 3 // デジタルピン3をトリガーに設定
-int Echo = 2 // デジタルピン2をエコーに設定
+int Trigger = 3; // デジタルピン3をトリガーに設定
+int Echo = 2; // デジタルピン2をエコーに設定
 
-double duration = 0
-double distance = 0
+long duration, distance;
 double speed_of_sound = 331.5 + 0.6 * 25; // 25度の場合の音速
 
 void setup()

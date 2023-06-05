@@ -8,7 +8,7 @@ DHT dht(DHTPIN, DHTTYPE);
 void setup()
 {
     Serial.begin(9600); // シリアル通信の初期化
-    Serail.println("DHT11 test!"); // シリアル通信に文字列を送信
+    Serial.println("DHT11 test!"); // シリアル通信に文字列を送信
 
     dht.begin(); // DHTセンサーの初期化
 }
